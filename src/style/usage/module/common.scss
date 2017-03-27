@@ -1,0 +1,25 @@
+@import "../fragment/yo-header";
+@import "../fragment/yo-carousel";
+#root{
+    height:100%;
+}
+
+@font-face {
+  font-family: 'yofont';
+  src:url(/iconfont/iconfont.woff) format('woff'),
+  url(/iconfont/iconfont.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'yofont';
+  src:url(/iconfont/iconfont-search.woff) format('woff'),
+  url(/iconfont/iconfont-search.ttf) format('truetype');
+}
+
+@include yo-header(
+    $bgcolor: #ca141d,
+    $color: #fff,
+    $item-font-size:.14rem,
+    $font-size:.12rem,
+    $item-space:.15rem
+);

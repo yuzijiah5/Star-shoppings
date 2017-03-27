@@ -1,0 +1,82 @@
+.m-index{
+    height:100%;
+    @include flexbox();
+    @include flex-direction(column);
+    header{
+        height:.40rem;
+        background:#ca141d;
+        .yo-header{
+            height:.4rem;
+            line-height:0.4rem;
+            .title{
+                height:.3rem;
+                width:1.9rem;
+                background:#fff;
+                margin:0 auto;
+                margin-left:.85rem;
+                border-radius:.20rem;
+                margin-top:.05rem;
+                .search-icon{
+                    color:#9e9e9e;
+                    font-size:.18rem;
+                    position:absolute;
+                    left:.96rem;
+                    line-height:.3rem;
+                }
+                .search-txt{
+                    color:#a9a9a9;
+                    width:1.2rem;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    font-size:0.12rem;
+                    position:absolute;
+                    left:1.28rem;
+                    line-height:.3rem;
+                }
+            }
+            .affirm{
+                font-size:.12rem;
+            }
+        }
+    }
+    
+    section{
+        flex:1;
+        background:#f2f3f5;
+    }
+    
+    footer{
+        height:.44rem;
+        background:#fff;
+        ul {
+            width:100%;
+            height:100%;
+            @include flexbox();
+            a{
+                @include flex(); 
+                color:#5d5f6a;
+            }
+            li {
+                width:100%;
+                height:100%;
+                @include flexbox();
+                @include flex-direction(column);
+                @include align-items(center);
+                @include justify-content(center);
+                i{
+                    font-size: .20rem;
+                    line-height: .20rem;
+                }
+                b{
+                    font-weight: normal;
+                    font-size: .12rem;
+//                  @include transform(scale(0.8));
+                }
+                &.active i,
+                &.active b{
+                   color: #f23030; 
+                }
+            }
+        }
+    }
+}
